@@ -16,6 +16,7 @@ export default [
     languageOptions: {
       globals: {
         ...globals.browser,
+        ...globals.node,
         describe: true,
         test: true,
         it: true,
