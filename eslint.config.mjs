@@ -4,8 +4,7 @@ import globals from "globals";
 export default [
   {
     files: ["**/*.{js,mjs,cjs}"],
-    plugins: { js },
-    extends: ["js/recommended"],
+    ...js.configs.recommended,
     languageOptions: { globals: globals.browser },
   },
   {
